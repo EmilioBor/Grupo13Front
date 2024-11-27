@@ -1,0 +1,17 @@
+{
+  "node": {
+    "005c2f72c968ccabd1daa141864f6f222dba5eeb6f": {
+      "workers": {
+        "app/Equipo/page": {
+          "moduleId": "[project]/.next-internal/server/app/Equipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/pais.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/Equipo/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "4/xYkwv+0xghdyYuUvTgyjiu9FOoyIBCXmyX4fayCmc="
+}
