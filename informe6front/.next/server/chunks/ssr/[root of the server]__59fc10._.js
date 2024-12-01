@@ -8,30 +8,6 @@ const mod = __turbopack_external_require__("next/dist/compiled/next-server/app-p
 
 module.exports = mod;
 }}),
-"[project]/src/actions/pais.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
-{
-/* __next_internal_action_entry_do_not_use__ {"005c2f72c968ccabd1daa141864f6f222dba5eeb6f":"getPais"} */ __turbopack_esm__({
-    "getPais": (()=>getPais)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
-;
-var getPais = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("005c2f72c968ccabd1daa141864f6f222dba5eeb6f", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getPais");
-}}),
-"[project]/src/actions/persona.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
-{
-/* __next_internal_action_entry_do_not_use__ {"0022d198029cede83f1aa09951c11efa55baea3a82":"getDirector"} */ __turbopack_esm__({
-    "getDirector": (()=>getDirector)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
-;
-var getDirector = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("0022d198029cede83f1aa09951c11efa55baea3a82", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getDirector");
-}}),
 "[project]/src/actions/equipo.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -48,78 +24,100 @@ var postEquipo = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d
 var getbynombre = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("4059a3e5562929719dd130a5adec34c8ce1cf488d1", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getbynombre");
 var getsEquipo = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("00996c7151bde45678d7b44cfcfe229a4adb98e016", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getsEquipo");
 }}),
-"[project]/src/app/Equipo/page.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"[project]/src/app/VistaEquipo/page.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
 {
 __turbopack_esm__({
-    "default": (()=>EquipoPage)
+    "default": (()=>VistaEquipos)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$pais$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/pais.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/persona.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/equipo.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/contraro.js [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
 ;
 ;
-;
-function EquipoPage() {
-    const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
+function VistaEquipos() {
+    const [equipo, setEquipo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         nombre: "",
-        idPais: "",
-        idPersona: ""
+        nombrePais: "",
+        nombrePersona: ""
     });
-    const [paises, setPaises] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
-    const [directores, setDirector] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const fetchData = async ()=>{
+    const [nombre, setNombre] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(""); // Estado para capturar el nombre del equipo
+    const [equiposList, setEquiposList] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]); // Estado para almacenar la lista de equipos
+    const [listContratos, setListContratos] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]); // Estado para almacenar los contratos
+    const [ciclistas, setCiclistas] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]); // Estado para almacenar los ciclistas
+    const [nuevoCiclista, setNuevoCiclista] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
+        nombre: "",
+        fechaInicio: "",
+        fechaFin: ""
+    });
+    // Función para manejar el cambio en el campo de búsqueda
+    const handleSearchChange = (e)=>{
+        const value = e.target.value;
+        setNombre(value);
+        if (value.trim() !== "") {
+            const fetchData = async ()=>{
+                try {
+                    setLoading(true);
+                    const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getsEquipo"])(); // Obtenemos la lista de equipos
+                    const filteredEquipos = res.filter((equipo)=>equipo.nombre.toLowerCase().includes(value.toLowerCase()));
+                    setEquiposList(filteredEquipos);
+                } catch (error) {
+                    console.error("Error al obtener los equipos:", error);
+                    setError("No se pudieron cargar los equipos");
+                } finally{
+                    setLoading(false);
+                }
+            };
+            fetchData();
+        } else {
+            // Limpiar los datos si no hay texto en el campo de búsqueda
+            setEquiposList([]); // Limpiar la lista de equipos
+            setEquipo({
+                nombre: "",
+                nombrePais: "",
+                nombrePersona: ""
+            }); // Limpiar los datos del equipo seleccionado
+            setCiclistas([]); // Limpiar la lista de ciclistas
+            setListContratos([]); // Limpiar los contratos
+        }
+    };
+    // Obtener los contratos cuando se selecciona un equipo
+    const handleEquipoSelect = (selectedEquipo)=>{
+        setEquipo({
+            nombre: selectedEquipo.nombre,
+            nombrePais: selectedEquipo.nombrePais,
+            nombrePersona: selectedEquipo.nombrePersona
+        });
+        setNombre(selectedEquipo.nombre); // Rellenar el campo de búsqueda con el nombre seleccionado
+        setEquiposList([]); // Limpiar la lista de opciones al seleccionar
+        // Obtener los contratos para el equipo seleccionado
+        const fetchContratos = async ()=>{
             try {
-                const nombrePais = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$pais$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getPais"])();
-                const nombreDirector = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getDirector"])();
-                setPaises(nombrePais);
-                setDirector(nombreDirector);
+                const contratos = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getContratoEquipo"])(selectedEquipo.nombre); // Reemplaza esto con tu función que trae los contratos
+                setListContratos(contratos); // Actualiza los contratos
             } catch (error) {
-                console.error("Error al obtener los datos:", error);
-                setError("No se pudieron cargar los datos");
+                console.error("Error al obtener los contratos:", error);
+                setError("No se pudieron cargar los contratos");
             }
         };
-        fetchData();
-    }, []);
+        fetchContratos();
+    };
     const handleInputChange = (e)=>{
         const { name, value } = e.target;
-        setFormData({
-            ...formData,
+        setNuevoCiclista({
+            ...nuevoCiclista,
             [name]: value
         });
-    };
-    const handleApiSubmit = async ()=>{
-        try {
-            console.log("Enviando datos:", formData);
-            setLoading(true);
-            const response = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["postEquipo"])(formData);
-            console.log("Datos enviados con éxito:", response);
-            alert("Equipo registrado con éxito");
-        } catch (err) {
-            console.error("Error al enviar los datos:", err);
-            alert(`Ocurrió un error: ${err.message}`);
-        } finally{
-            setLoading(false);
-        }
-    };
-    const handleSubmit = (e)=>{
-        e.preventDefault();
-        const confirm = window.confirm("¿Estás seguro de que deseas registrar este equipo?");
-        if (confirm) {
-            handleApiSubmit();
-        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col items-center justify-center min-h-screen bg-gray-50 p-12",
@@ -129,229 +127,269 @@ function EquipoPage() {
                 className: "absolute top-4 left-4 text-xl text-blue-500 hover:underline",
                 children: "Volver al Inicio"
             }, void 0, false, {
-                fileName: "[project]/src/app/Equipo/page.js",
-                lineNumber: 67,
+                fileName: "[project]/src/app/VistaEquipo/page.js",
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                onSubmit: handleSubmit,
-                className: "bg-gray-100 p-12 rounded-xl shadow-2xl max-w-5xl w-full space-y-10",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "bg-gray-100 p-12 rounded-xl shadow-2xl w-full max-w-6xl space-y-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-4xl font-bold text-center text-black",
-                        children: "Alta de Equipo"
+                        className: "text-3xl font-bold text-black",
+                        children: "Vista Equipos"
                     }, void 0, false, {
-                        fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 75,
+                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 sm:grid-cols-2 gap-10",
+                        className: "grid grid-cols-1 sm:grid-cols-2 gap-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center space-x-4 relative",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        placeholder: "🔍 Buscar equipo",
+                                        className: "flex-1 p-4 border rounded-lg shadow-sm bg-white text-black outline-none",
+                                        value: nombre,
+                                        onChange: handleSearchChange
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        lineNumber: 100,
+                                        columnNumber: 13
+                                    }, this),
+                                    nombre.trim() !== "" && equiposList.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "absolute top-full left-0 w-full bg-white shadow-xl text-black mt-2 border border-gray-300 rounded-lg max-h-40 overflow-y-auto z-10 transition-all duration-300 ease-in-out",
+                                        children: equiposList.map((equipo)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: "p-2 cursor-pointer hover:bg-blue-100 transition-colors duration-200 ease-in-out rounded-lg",
+                                                onClick: ()=>handleEquipoSelect(equipo),
+                                                children: equipo.nombre
+                                            }, equipo.id, false, {
+                                                fileName: "[project]/src/app/VistaEquipo/page.js",
+                                                lineNumber: 110,
+                                                columnNumber: 19
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        lineNumber: 108,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        type: "button",
+                                        href: "/Equipo",
+                                        className: "group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-blue-600 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20",
+                                        children: "Agregar Equipo"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        lineNumber: 120,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/VistaEquipo/page.js",
+                                lineNumber: 99,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "col-span-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-lg font-medium mb-3 text-black",
-                                        htmlFor: "nombre",
-                                        children: "Nombre"
+                                        className: "block text-lg font-medium mb-2 text-black",
+                                        children: "País"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 79,
+                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        lineNumber: 131,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         type: "text",
-                                        id: "nombre",
-                                        name: "nombre",
-                                        placeholder: "Nombre del equipo",
-                                        value: formData.nombre,
-                                        onChange: handleInputChange,
-                                        className: "w-full p-4 border text-black rounded-lg shadow-sm bg-white outline-none"
+                                        value: equipo.nombrePais,
+                                        readOnly: true,
+                                        className: "w-full p-4 border rounded-lg shadow-sm bg-white text-black outline-none"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 82,
+                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        lineNumber: 132,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 78,
+                                fileName: "[project]/src/app/VistaEquipo/page.js",
+                                lineNumber: 130,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "col-span-2 sm:col-span-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-lg font-medium mb-3 text-black",
-                                        htmlFor: "pais",
-                                        children: "País"
+                                        className: "block text-lg font-medium mb-2 text-black",
+                                        children: "Director"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 94,
+                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        lineNumber: 142,
                                         columnNumber: 13
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                        id: "idPais",
-                                        name: "idPais",
-                                        value: formData.idPais,
-                                        onChange: handleInputChange,
-                                        className: "w-full p-4 border rounded-lg shadow-sm bg-white text-black outline-none",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        value: equipo.nombrePersona,
+                                        readOnly: true,
+                                        className: "w-full p-4 border rounded-lg shadow-sm bg-white text-black outline-none"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        lineNumber: 143,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/VistaEquipo/page.js",
+                                lineNumber: 141,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                        lineNumber: 97,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-end mb-4",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/Persona",
+                            className: "px-6 py-3 bg-green-500 text-white rounded-lg shadow-lg hover:bg-green-600 focus:outline-none",
+                            children: "Agregar Ciclista"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/VistaEquipo/page.js",
+                            lineNumber: 154,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                        lineNumber: 153,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "overflow-x-auto",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+                            className: "w-full border-collapse border border-gray-300 text-black",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                        className: "bg-gray-200",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                value: "idPais",
-                                                children: "Selecciona un país"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                className: "border border-gray-300 p-4 text-left font-semibold",
+                                                children: "Ciclista"
                                             }, void 0, false, {
-                                                fileName: "[project]/src/app/Equipo/page.js",
-                                                lineNumber: 104,
-                                                columnNumber: 15
+                                                fileName: "[project]/src/app/VistaEquipo/page.js",
+                                                lineNumber: 167,
+                                                columnNumber: 17
                                             }, this),
-                                            paises.length > 0 ? paises.map((pais)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                    value: pais.id,
-                                                    children: pais.nombre
-                                                }, pais.id, false, {
-                                                    fileName: "[project]/src/app/Equipo/page.js",
-                                                    lineNumber: 107,
-                                                    columnNumber: 19
-                                                }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                disabled: true,
-                                                children: "Cargando países..."
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                className: "border border-gray-300 p-4 text-left font-semibold",
+                                                children: "Año Inicio"
                                             }, void 0, false, {
-                                                fileName: "[project]/src/app/Equipo/page.js",
-                                                lineNumber: 112,
+                                                fileName: "[project]/src/app/VistaEquipo/page.js",
+                                                lineNumber: 168,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                className: "border border-gray-300 p-4 text-left font-semibold",
+                                                children: "Fecha Fin"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/VistaEquipo/page.js",
+                                                lineNumber: 169,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 97,
-                                        columnNumber: 13
+                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        lineNumber: 166,
+                                        columnNumber: 15
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 93,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 77,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                className: "block text-lg font-medium mb-3 text-black",
-                                htmlFor: "director",
-                                children: "Director"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 119,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center border rounded-lg shadow-sm bg-white",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                    id: "idPersona",
-                                    name: "idPersona",
-                                    value: formData.idPersona,
-                                    onChange: handleInputChange,
-                                    className: "flex-1 px-4 py-3 outline-none text-black",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "idPersona",
-                                            children: "Buscar director"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Equipo/page.js",
-                                            lineNumber: 130,
-                                            columnNumber: 15
-                                        }, this),
-                                        directores.map((dir)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                value: dir.id,
-                                                children: [
-                                                    dir.nombre,
-                                                    " ",
-                                                    dir.apellido
-                                                ]
-                                            }, dir.id, true, {
-                                                fileName: "[project]/src/app/Equipo/page.js",
-                                                lineNumber: 132,
-                                                columnNumber: 17
-                                            }, this))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/Equipo/page.js",
-                                    lineNumber: 123,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 122,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 118,
-                        columnNumber: 9
-                    }, this),
-                    error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-red-500 text-center",
-                        children: error
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 140,
-                        columnNumber: 19
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-end space-x-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/VistaEquipo",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    type: "button",
-                                    className: "px-8 py-4 bg-gray-200 text-black rounded-lg shadow hover:bg-gray-300",
-                                    children: "Cancelar"
                                 }, void 0, false, {
-                                    fileName: "[project]/src/app/Equipo/page.js",
-                                    lineNumber: 144,
+                                    fileName: "[project]/src/app/VistaEquipo/page.js",
+                                    lineNumber: 165,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+                                    children: listContratos.length > 0 ? listContratos.map((contrato, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                            className: "bg-white",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    className: "border border-gray-300 p-4",
+                                                    children: contrato.nombreCiclista
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/VistaEquipo/page.js",
+                                                    lineNumber: 176,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    className: "border border-gray-300 p-4",
+                                                    children: contrato.anioInicio
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/VistaEquipo/page.js",
+                                                    lineNumber: 177,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    className: "border border-gray-300 p-4",
+                                                    children: contrato.fechaFin
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/VistaEquipo/page.js",
+                                                    lineNumber: 178,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, index, true, {
+                                            fileName: "[project]/src/app/VistaEquipo/page.js",
+                                            lineNumber: 175,
+                                            columnNumber: 19
+                                        }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                            colSpan: "3",
+                                            className: "border border-gray-300 p-4 text-center",
+                                            children: "No hay contratos disponibles"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/VistaEquipo/page.js",
+                                            lineNumber: 183,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        lineNumber: 182,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/VistaEquipo/page.js",
+                                    lineNumber: 172,
                                     columnNumber: 13
                                 }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 143,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                type: "submit",
-                                className: "px-8 py-4 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600",
-                                disabled: loading,
-                                children: loading ? "Enviando..." : "Aceptar"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 151,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 142,
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/VistaEquipo/page.js",
+                            lineNumber: 164,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                        lineNumber: 163,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/app/Equipo/page.js",
-                lineNumber: 71,
+                fileName: "[project]/src/app/VistaEquipo/page.js",
+                lineNumber: 93,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/src/app/Equipo/page.js",
-        lineNumber: 66,
+        fileName: "[project]/src/app/VistaEquipo/page.js",
+        lineNumber: 89,
         columnNumber: 5
     }, this);
 }
 }}),
-"[project]/src/app/Equipo/page.js [app-rsc] (ecmascript, Next.js server component, client modules ssr)": ((__turbopack_context__) => {
+"[project]/src/app/VistaEquipo/page.js [app-rsc] (ecmascript, Next.js server component, client modules ssr)": ((__turbopack_context__) => {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
@@ -3313,4 +3351,4 @@ const createServerReference = (("TURBOPACK compile-time truthy", 1) ? __turbopac
 
 };
 
-//# sourceMappingURL=%5Broot%20of%20the%20server%5D__29667b._.js.map
+//# sourceMappingURL=%5Broot%20of%20the%20server%5D__59fc10._.js.map

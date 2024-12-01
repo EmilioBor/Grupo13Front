@@ -140,7 +140,7 @@ export default function EquipoPage() {
         {error && <div className="text-red-500 text-center">{error}</div>}
 
         <div className="flex justify-end space-x-6">
-          <Link href={"/"}>
+          <Link href={"/VistaEquipo"}>
             <button
               type="button"
               className="px-8 py-4 bg-gray-200 text-black rounded-lg shadow hover:bg-gray-300"
