@@ -1,9 +1,31 @@
 {
   "node": {
+    "40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2": {
+      "workers": {
+        "app/Equipo/page": {
+          "moduleId": "[project]/.next-internal/server/app/Equipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/pais.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/Equipo/page": "action-browser"
+      }
+    },
+    "0022d198029cede83f1aa09951c11efa55baea3a82": {
+      "workers": {
+        "app/Equipo/page": {
+          "moduleId": "[project]/.next-internal/server/app/Equipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/pais.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/Equipo/page": "action-browser"
+      }
+    },
     "005c2f72c968ccabd1daa141864f6f222dba5eeb6f": {
       "workers": {
         "app/Equipo/page": {
-          "moduleId": "[project]/.next-internal/server/app/Equipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/pais.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "moduleId": "[project]/.next-internal/server/app/Equipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/pais.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
         }
       },

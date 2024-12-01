@@ -23,10 +23,12 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$pais$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/pais.js [app-client] (ecmascript)"); // Asegúrate de tener esta función en el archivo correcto
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$pais$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/pais.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/persona.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -37,16 +39,18 @@ function EquipoPage() {
         pais: "",
         director: ""
     });
-    const [paises, setPaises] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]); // Para almacenar la lista de países
-    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(""); // Para manejar errores
-    // Función para obtener países
+    const [paises, setPaises] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [directores, setDirector] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "EquipoPage.useEffect": ()=>{
             const fetchPais = {
                 "EquipoPage.useEffect.fetchPais": async ()=>{
                     try {
-                        const nombrePais = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$pais$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getPais"])(); // Llama a la API que devuelve la lista de países
-                        setPaises(nombrePais); // Asigna los países al estado
+                        const nombrePais = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$pais$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getPais"])();
+                        setPaises(nombrePais);
+                        const nombreDirector = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getDirector"])();
+                        setDirector(nombreDirector);
                     } catch (error) {
                         console.error('Error al obtener los países', error);
                         setError('No se pudieron cargar los países');
@@ -66,7 +70,6 @@ function EquipoPage() {
     const handleSubmit = (e)=>{
         e.preventDefault();
         console.log("Datos del equipo:", formData);
-    // Aquí puedes enviar los datos al servidor o realizar alguna acción
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col items-center justify-center min-h-screen bg-gray-50 p-12",
@@ -77,7 +80,7 @@ function EquipoPage() {
                 children: "Volver al Inicio"
             }, void 0, false, {
                 fileName: "[project]/src/app/Equipo/page.js",
-                lineNumber: 43,
+                lineNumber: 46,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -89,7 +92,7 @@ function EquipoPage() {
                         children: "Alta de Equipo"
                     }, void 0, false, {
                         fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 52,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -103,7 +106,7 @@ function EquipoPage() {
                                         children: "Nombre"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 59,
+                                        lineNumber: 62,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -116,13 +119,13 @@ function EquipoPage() {
                                         className: "w-full p-4 border rounded-lg shadow-sm bg-white outline-none"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 65,
+                                        lineNumber: 68,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 58,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -133,7 +136,7 @@ function EquipoPage() {
                                         children: "País"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 77,
+                                        lineNumber: 80,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -141,15 +144,14 @@ function EquipoPage() {
                                         name: "pais",
                                         value: formData.pais,
                                         onChange: handleInputChange,
-                                        className: "w-full p-4 border rounded-lg shadow-sm bg-white text-black outline-none" // Asegura que el texto se muestre en negro
-                                        ,
+                                        className: "w-full p-4 border rounded-lg shadow-sm bg-white text-black outline-none",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                 value: "",
                                                 children: "Selecciona un país"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Equipo/page.js",
-                                                lineNumber: 90,
+                                                lineNumber: 93,
                                                 columnNumber: 15
                                             }, this),
                                             paises.length > 0 ? paises.map((pais)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -157,32 +159,32 @@ function EquipoPage() {
                                                     children: pais.nombre
                                                 }, pais.id, false, {
                                                     fileName: "[project]/src/app/Equipo/page.js",
-                                                    lineNumber: 93,
+                                                    lineNumber: 96,
                                                     columnNumber: 19
                                                 }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                 disabled: true,
                                                 children: "Cargando países..."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Equipo/page.js",
-                                                lineNumber: 98,
+                                                lineNumber: 101,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 83,
+                                        lineNumber: 86,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 76,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 57,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -193,23 +195,39 @@ function EquipoPage() {
                                 children: "Director"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 106,
+                                lineNumber: 109,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center border rounded-lg shadow-sm bg-white",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                         type: "text",
                                         id: "director",
                                         name: "director",
-                                        placeholder: "Buscar director",
                                         value: formData.director,
                                         onChange: handleInputChange,
-                                        className: "flex-1 px-4 py-3 outline-none text-black"
-                                    }, void 0, false, {
+                                        className: "flex-1 px-4 py-3 outline-none text-black",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                children: "Buscar director"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Equipo/page.js",
+                                                lineNumber: 124,
+                                                columnNumber: 15
+                                            }, this),
+                                            directores.map((dir)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: dir.id,
+                                                    children: dir.nombre + dir.apellido
+                                                }, dir.id, false, {
+                                                    fileName: "[project]/src/app/Equipo/page.js",
+                                                    lineNumber: 126,
+                                                    columnNumber: 17
+                                                }, this))
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 113,
+                                        lineNumber: 116,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -218,19 +236,19 @@ function EquipoPage() {
                                         children: "🔍"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 122,
+                                        lineNumber: 132,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 112,
+                                lineNumber: 115,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 105,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this),
                     error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -238,7 +256,7 @@ function EquipoPage() {
                         children: error
                     }, void 0, false, {
                         fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 133,
+                        lineNumber: 140,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -249,16 +267,15 @@ function EquipoPage() {
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     type: "button",
                                     className: "px-8 py-4 bg-gray-200 text-black rounded-lg shadow hover:bg-gray-300",
-                                    onClick: ()=>alert("Cancelar"),
                                     children: "Cancelar"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Equipo/page.js",
-                                    lineNumber: 139,
+                                    lineNumber: 146,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 138,
+                                lineNumber: 145,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -267,106 +284,29 @@ function EquipoPage() {
                                 children: "Aceptar"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 147,
+                                lineNumber: 154,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 137,
+                        lineNumber: 144,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Equipo/page.js",
-                lineNumber: 47,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-10",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-2xl font-semibold",
-                        children: "Datos Ingresados:"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 158,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "Nombre:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 160,
-                                        columnNumber: 14
-                                    }, this),
-                                    " ",
-                                    formData.nombre
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 160,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "País:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 161,
-                                        columnNumber: 14
-                                    }, this),
-                                    " ",
-                                    formData.pais
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 161,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "Director:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/Equipo/page.js",
-                                        lineNumber: 162,
-                                        columnNumber: 14
-                                    }, this),
-                                    " ",
-                                    formData.director
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/Equipo/page.js",
-                                lineNumber: 162,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/Equipo/page.js",
-                        lineNumber: 159,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/Equipo/page.js",
-                lineNumber: 157,
+                lineNumber: 50,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Equipo/page.js",
-        lineNumber: 41,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 }
-_s(EquipoPage, "lrA+Hy+EayBrGR+5kS/QVE53HM8=");
+_s(EquipoPage, "UD40tYaOdzLCzycghN7RDsIZzbg=");
 _c = EquipoPage;
 var _c;
 __turbopack_refresh__.register(_c, "EquipoPage");
