@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_90777f._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_002af3._.js", {
 
 "[project]/src/actions/equipo.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -30,7 +30,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var getContratoEquipo = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createServerReference"])("40ffbac1f3bb5002038674dea5a6f61d37c99d4fc4", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getContratoEquipo");
 var postContrato = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createServerReference"])("405c6dbd757e0639513ac08ea3ca528dec4c7ec25b", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["findSourceMapURL"], "postContrato");
 }}),
-"[project]/src/app/VistaEquipo/page.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/src/actions/persona.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: require } = __turbopack_context__;
+{
+/* __next_internal_action_entry_do_not_use__ {"0022d198029cede83f1aa09951c11efa55baea3a82":"getDirector","00ed57cec36f2de12436ef050ad1cf342d43993d1c":"getCiclistas"} */ __turbopack_esm__({
+    "getCiclistas": (()=>getCiclistas),
+    "getDirector": (()=>getDirector)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-client] (ecmascript)");
+;
+var getDirector = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createServerReference"])("0022d198029cede83f1aa09951c11efa55baea3a82", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getDirector");
+var getCiclistas = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createServerReference"])("00ed57cec36f2de12436ef050ad1cf342d43993d1c", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getCiclistas");
+}}),
+"[project]/src/app/AltaPrueba/page.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: require } = __turbopack_context__;
@@ -43,9 +57,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/equipo.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/contraro.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/persona.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -68,37 +84,37 @@ function VistaEquipos() {
         fechaInicio: "",
         fechaFin: ""
     });
+    const [searchCiclistaQuery, setSearchCiclistaQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(""); // Estado para capturar la búsqueda de ciclistas
+    const [filteredCiclistas, setFilteredCiclistas] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]); // Ciclistas filtrados
     // Función para manejar el cambio en el campo de búsqueda
     const handleSearchChange = (e)=>{
         const value = e.target.value;
-        setNombre(value);
+        setSearchCiclistaQuery(value);
         if (value.trim() !== "") {
-            const fetchData = async ()=>{
-                try {
-                    setLoading(true);
-                    const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getsEquipo"])(); // Obtenemos la lista de equipos
-                    const filteredEquipos = res.filter((equipo)=>equipo.nombre.toLowerCase().includes(value.toLowerCase()));
-                    setEquiposList(filteredEquipos);
-                } catch (error) {
-                    console.error("Error al obtener los equipos:", error);
-                    setError("No se pudieron cargar los equipos");
-                } finally{
-                    setLoading(false);
-                }
-            };
-            fetchData();
+            const filtered = ciclistas.filter((ciclista)=>`${ciclista.nombre} ${ciclista.apellido}`.toLowerCase().includes(value.toLowerCase()));
+            setFilteredCiclistas(filtered);
         } else {
-            // Limpiar los datos si no hay texto en el campo de búsqueda
-            setEquiposList([]); // Limpiar la lista de equipos
-            setEquipo({
-                nombre: "",
-                nombrePais: "",
-                nombrePersona: ""
-            }); // Limpiar los datos del equipo seleccionado
-            setCiclistas([]); // Limpiar la lista de ciclistas
-            setListContratos([]); // Limpiar los contratos
+            setFilteredCiclistas(ciclistas);
         }
     };
+    // Obtener los ciclistas
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "VistaEquipos.useEffect": ()=>{
+            const fetchCiclistas = {
+                "VistaEquipos.useEffect.fetchCiclistas": async ()=>{
+                    try {
+                        const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCiclistas"])();
+                        setCiclistas(res);
+                        setFilteredCiclistas(res);
+                    } catch (error) {
+                        console.error("Error al obtener los ciclistas:", error);
+                        setError("No se pudieron cargar los ciclistas");
+                    }
+                }
+            }["VistaEquipos.useEffect.fetchCiclistas"];
+            fetchCiclistas();
+        }
+    }["VistaEquipos.useEffect"], []);
     // Obtener los contratos cuando se selecciona un equipo
     const handleEquipoSelect = (selectedEquipo)=>{
         setEquipo({
@@ -111,7 +127,7 @@ function VistaEquipos() {
         // Obtener los contratos para el equipo seleccionado
         const fetchContratos = async ()=>{
             try {
-                const contratos = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getContratoEquipo"])(selectedEquipo.nombre); // Reemplaza esto con tu función que trae los contratos
+                const contratos = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getContratoEquipo"])(); // Reemplaza esto con tu función que trae los contratos
                 setListContratos(contratos); // Actualiza los contratos
             } catch (error) {
                 console.error("Error al obtener los contratos:", error);
@@ -120,12 +136,14 @@ function VistaEquipos() {
         };
         fetchContratos();
     };
-    const handleInputChange = (e)=>{
-        const { name, value } = e.target;
+    // Manejo de la selección del ciclista
+    const handleSelectCiclista = (id, nombreCompleto)=>{
         setNuevoCiclista({
             ...nuevoCiclista,
-            [name]: value
+            nombre: nombreCompleto
         });
+        setSearchCiclistaQuery(""); // Limpiar el campo de búsqueda después de seleccionar
+        setFilteredCiclistas(ciclistas); // Restaurar la lista completa de ciclistas
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col items-center justify-center min-h-screen bg-gray-50 p-12",
@@ -135,7 +153,7 @@ function VistaEquipos() {
                 className: "absolute top-4 left-4 text-xl text-blue-500 hover:underline",
                 children: "Volver al Inicio"
             }, void 0, false, {
-                fileName: "[project]/src/app/VistaEquipo/page.js",
+                fileName: "[project]/src/app/AltaPrueba/page.js",
                 lineNumber: 90,
                 columnNumber: 7
             }, this),
@@ -144,9 +162,9 @@ function VistaEquipos() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-3xl font-bold text-black",
-                        children: "Vista Equipos"
+                        children: "Alta Prueba"
                     }, void 0, false, {
-                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                        fileName: "[project]/src/app/AltaPrueba/page.js",
                         lineNumber: 94,
                         columnNumber: 9
                     }, this),
@@ -154,131 +172,187 @@ function VistaEquipos() {
                         className: "grid grid-cols-1 sm:grid-cols-2 gap-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center space-x-4 relative",
+                                className: "col-span-1 sm:col-span-1",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                        type: "text",
-                                        placeholder: "🔍 Buscar equipo",
-                                        className: "flex-1 p-4 border rounded-lg shadow-sm bg-white text-black outline-none",
-                                        value: nombre,
-                                        onChange: handleSearchChange
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "block text-lg font-medium mb-2 text-black",
+                                        children: "Año Edición"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
                                         lineNumber: 100,
                                         columnNumber: 13
                                     }, this),
-                                    nombre.trim() !== "" && equiposList.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "absolute top-full left-0 w-full bg-white shadow-xl text-black mt-2 border border-gray-300 rounded-lg max-h-40 overflow-y-auto z-10 transition-all duration-300 ease-in-out",
-                                        children: equiposList.map((equipo)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "p-2 cursor-pointer hover:bg-blue-100 transition-colors duration-200 ease-in-out rounded-lg",
-                                                onClick: ()=>handleEquipoSelect(equipo),
-                                                children: equipo.nombre
-                                            }, equipo.id, false, {
-                                                fileName: "[project]/src/app/VistaEquipo/page.js",
-                                                lineNumber: 110,
-                                                columnNumber: 19
-                                            }, this))
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        className: "w-full p-4 border rounded-lg shadow-sm bg-white text-black outline-none"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                                        lineNumber: 108,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        type: "button",
-                                        href: "/Equipo",
-                                        className: "group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-blue-600 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20",
-                                        children: "Agregar Equipo"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                                        lineNumber: 120,
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 101,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "[project]/src/app/VistaEquipo/page.js",
+                                fileName: "[project]/src/app/AltaPrueba/page.js",
                                 lineNumber: 99,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col-span-2",
+                                className: "col-span-1 sm:col-span-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                         className: "block text-lg font-medium mb-2 text-black",
-                                        children: "País"
+                                        children: "Nombre"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                                        lineNumber: 131,
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 109,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         type: "text",
-                                        value: equipo.nombrePais,
-                                        readOnly: true,
                                         className: "w-full p-4 border rounded-lg shadow-sm bg-white text-black outline-none"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                                        lineNumber: 132,
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 110,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "[project]/src/app/VistaEquipo/page.js",
-                                lineNumber: 130,
+                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                lineNumber: 108,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col-span-2 sm:col-span-1",
+                                className: "col-span-1 sm:col-span-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                         className: "block text-lg font-medium mb-2 text-black",
-                                        children: "Director"
+                                        children: "Kilómetros Totales"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                                        lineNumber: 142,
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         type: "text",
-                                        value: equipo.nombrePersona,
-                                        readOnly: true,
                                         className: "w-full p-4 border rounded-lg shadow-sm bg-white text-black outline-none"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                                        lineNumber: 143,
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 119,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "[project]/src/app/VistaEquipo/page.js",
-                                lineNumber: 141,
+                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                lineNumber: 117,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "col-span-1 sm:col-span-1",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "block text-lg font-medium mb-2 text-black",
+                                        children: "Cantidad Etapas"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 127,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        className: "w-full p-4 border rounded-lg shadow-sm bg-white text-black outline-none"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 128,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                lineNumber: 126,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "block text-lg font-medium mb-3 text-black",
+                                        htmlFor: "director",
+                                        children: "Ciclista Primero"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 135,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center border rounded-lg shadow-sm bg-white",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                            id: "idPersona",
+                                            name: "idPersona",
+                                            value: ciclistas.nombre,
+                                            className: "flex-1 px-4 py-3 outline-none text-black",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "idPersona",
+                                                    children: "Buscar Ciclista"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/AltaPrueba/page.js",
+                                                    lineNumber: 146,
+                                                    columnNumber: 15
+                                                }, this),
+                                                ciclistas.map((dir)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                        value: dir.id,
+                                                        children: [
+                                                            dir.nombre,
+                                                            " ",
+                                                            dir.apellido
+                                                        ]
+                                                    }, dir.id, true, {
+                                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                                        lineNumber: 148,
+                                                        columnNumber: 17
+                                                    }, this))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/AltaPrueba/page.js",
+                                            lineNumber: 139,
+                                            columnNumber: 13
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 138,
+                                        columnNumber: 11
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                lineNumber: 134,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex justify-end p-8",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/Persona",
+                                    className: "group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-green-600 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20",
+                                    children: "Agregar Equipo"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/AltaPrueba/page.js",
+                                    lineNumber: 159,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                lineNumber: 158,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "[project]/src/app/VistaEquipo/page.js",
+                        fileName: "[project]/src/app/AltaPrueba/page.js",
                         lineNumber: 97,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-end mb-4",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: "/Persona",
-                            className: "group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-green-600 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20",
-                            children: "Agregar Ciclista"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/VistaEquipo/page.js",
-                            lineNumber: 154,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                        lineNumber: 153,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "overflow-x-auto",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
-                            className: "w-full border-collapse border border-gray-300 text-black",
+                            className: "w-full border-collapse border  border-gray-300 text-black",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -286,38 +360,38 @@ function VistaEquipos() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 className: "border border-gray-300 p-4 text-left font-semibold",
-                                                children: "Ciclista"
+                                                children: "Número"
                                             }, void 0, false, {
-                                                fileName: "[project]/src/app/VistaEquipo/page.js",
-                                                lineNumber: 167,
-                                                columnNumber: 17
+                                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                                lineNumber: 173,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 className: "border border-gray-300 p-4 text-left font-semibold",
-                                                children: "Año Inicio"
+                                                children: "Equipo"
                                             }, void 0, false, {
-                                                fileName: "[project]/src/app/VistaEquipo/page.js",
-                                                lineNumber: 168,
-                                                columnNumber: 17
+                                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                                lineNumber: 174,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 className: "border border-gray-300 p-4 text-left font-semibold",
-                                                children: "Fecha Fin"
+                                                children: "Eliminar"
                                             }, void 0, false, {
-                                                fileName: "[project]/src/app/VistaEquipo/page.js",
-                                                lineNumber: 169,
-                                                columnNumber: 17
+                                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                                lineNumber: 175,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                                        lineNumber: 166,
-                                        columnNumber: 15
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 172,
+                                        columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
-                                    fileName: "[project]/src/app/VistaEquipo/page.js",
-                                    lineNumber: 165,
-                                    columnNumber: 13
+                                    fileName: "[project]/src/app/AltaPrueba/page.js",
+                                    lineNumber: 171,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
                                     children: listContratos.length > 0 ? listContratos.map((contrato, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -325,78 +399,120 @@ function VistaEquipos() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: "border border-gray-300 p-4",
-                                                    children: contrato.nombrePersona
+                                                    children: contrato.numero
                                                 }, void 0, false, {
-                                                    fileName: "[project]/src/app/VistaEquipo/page.js",
-                                                    lineNumber: 176,
-                                                    columnNumber: 21
+                                                    fileName: "[project]/src/app/AltaPrueba/page.js",
+                                                    lineNumber: 182,
+                                                    columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: "border border-gray-300 p-4",
-                                                    children: contrato.fechaInicio
+                                                    children: contrato.equipo
                                                 }, void 0, false, {
-                                                    fileName: "[project]/src/app/VistaEquipo/page.js",
-                                                    lineNumber: 177,
-                                                    columnNumber: 21
+                                                    fileName: "[project]/src/app/AltaPrueba/page.js",
+                                                    lineNumber: 183,
+                                                    columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                    className: "border border-gray-300 p-4",
-                                                    children: contrato.fechaFin
+                                                    className: "border border-gray-300 p-4 text-center",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        className: "text-red-500",
+                                                        children: "Eliminar"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                                        lineNumber: 185,
+                                                        columnNumber: 25
+                                                    }, this)
                                                 }, void 0, false, {
-                                                    fileName: "[project]/src/app/VistaEquipo/page.js",
-                                                    lineNumber: 178,
-                                                    columnNumber: 21
+                                                    fileName: "[project]/src/app/AltaPrueba/page.js",
+                                                    lineNumber: 184,
+                                                    columnNumber: 23
                                                 }, this)
                                             ]
                                         }, index, true, {
-                                            fileName: "[project]/src/app/VistaEquipo/page.js",
-                                            lineNumber: 175,
-                                            columnNumber: 19
+                                            fileName: "[project]/src/app/AltaPrueba/page.js",
+                                            lineNumber: 181,
+                                            columnNumber: 21
                                         }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                             colSpan: "3",
                                             className: "border border-gray-300 p-4 text-center",
-                                            children: "No hay contratos disponibles"
+                                            children: "No hay equipos cargados"
                                         }, void 0, false, {
-                                            fileName: "[project]/src/app/VistaEquipo/page.js",
-                                            lineNumber: 183,
-                                            columnNumber: 19
+                                            fileName: "[project]/src/app/AltaPrueba/page.js",
+                                            lineNumber: 191,
+                                            columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
-                                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                                        lineNumber: 182,
-                                        columnNumber: 17
+                                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                                        lineNumber: 190,
+                                        columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
-                                    fileName: "[project]/src/app/VistaEquipo/page.js",
-                                    lineNumber: 172,
-                                    columnNumber: 13
+                                    fileName: "[project]/src/app/AltaPrueba/page.js",
+                                    lineNumber: 178,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "[project]/src/app/VistaEquipo/page.js",
-                            lineNumber: 164,
+                            fileName: "[project]/src/app/AltaPrueba/page.js",
+                            lineNumber: 170,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/src/app/VistaEquipo/page.js",
-                        lineNumber: 163,
-                        columnNumber: 9
+                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                        lineNumber: 169,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-end space-x-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    className: "px-8 py-4 bg-gray-200 text-black rounded-lg shadow hover:bg-gray-300",
+                                    children: "Cancelar"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/AltaPrueba/page.js",
+                                    lineNumber: 200,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                lineNumber: 199,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "submit",
+                                className: "px-8 py-4 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600",
+                                disabled: loading,
+                                children: loading ? "Enviando..." : "Aceptar"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/AltaPrueba/page.js",
+                                lineNumber: 207,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/AltaPrueba/page.js",
+                        lineNumber: 198,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/app/VistaEquipo/page.js",
+                fileName: "[project]/src/app/AltaPrueba/page.js",
                 lineNumber: 93,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/src/app/VistaEquipo/page.js",
+        fileName: "[project]/src/app/AltaPrueba/page.js",
         lineNumber: 89,
         columnNumber: 5
     }, this);
 }
-_s(VistaEquipos, "mxd5HIN8cGnOv7su6xuLhMIwQg4=");
+_s(VistaEquipos, "AQHwxLf7n4jOhk4G8IPIGrgUWdA=");
 _c = VistaEquipos;
 var _c;
 __turbopack_refresh__.register(_c, "VistaEquipos");
@@ -404,7 +520,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/src/app/VistaEquipo/page.js [app-rsc] (ecmascript, Next.js server component, client modules)": ((__turbopack_context__) => {
+"[project]/src/app/AltaPrueba/page.js [app-rsc] (ecmascript, Next.js server component, client modules)": ((__turbopack_context__) => {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
@@ -3114,4 +3230,4 @@ const createServerReference = (("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK
 }}),
 }]);
 
-//# sourceMappingURL=_90777f._.js.map
+//# sourceMappingURL=_002af3._.js.map

@@ -3,5 +3,7 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/VistaEquipo/page": "app/VistaEquipo/page.js",
   "/Equipo/page": "app/Equipo/page.js",
-  "/Contrato/page": "app/Contrato/page.js"
+  "/Contrato/page": "app/Contrato/page.js",
+  "/AltaPrueba/page": "app/AltaPrueba/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }

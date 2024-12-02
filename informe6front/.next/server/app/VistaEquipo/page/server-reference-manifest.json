@@ -1,6 +1,6 @@
 {
   "node": {
-    "40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2": {
+    "405c6dbd757e0639513ac08ea3ca528dec4c7ec25b": {
       "workers": {
         "app/VistaEquipo/page": {
           "moduleId": "[project]/.next-internal/server/app/VistaEquipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
@@ -23,6 +23,17 @@
       }
     },
     "00996c7151bde45678d7b44cfcfe229a4adb98e016": {
+      "workers": {
+        "app/VistaEquipo/page": {
+          "moduleId": "[project]/.next-internal/server/app/VistaEquipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/VistaEquipo/page": "action-browser"
+      }
+    },
+    "40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2": {
       "workers": {
         "app/VistaEquipo/page": {
           "moduleId": "[project]/.next-internal/server/app/VistaEquipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
