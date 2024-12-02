@@ -19,24 +19,36 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/persona.js [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
 function ContratoPage() {
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
-        ciclista: "",
-        equipo: "",
+        idPersona: "",
+        idEquipo: "",
         fechaInicio: "",
         fechaFin: ""
     });
     const [numeroContrato, setNumeroContrato] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [ciclistas, setCiclistas] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [filteredCiclistas, setFilteredCiclistas] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [searchQuery, setSearchQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     // Manejo del número de contrato al cargar la página
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const ultimoNumero = localStorage.getItem("numeroContrato") || 0; // Obtener el último número de contrato
-        const nuevoNumero = parseInt(ultimoNumero) + 1; // Incrementar en 1
-        setNumeroContrato(nuevoNumero); // Actualizar el estado
-        localStorage.setItem("numeroContrato", nuevoNumero); // Guardar el nuevo número en localStorage
+        const ultimoNumero = localStorage.getItem("numeroContrato") || 0;
+        const nuevoNumero = parseInt(ultimoNumero) + 1;
+        setNumeroContrato(nuevoNumero);
+        localStorage.setItem("numeroContrato", nuevoNumero);
+        // Obtener ciclistas al cargar la página
+        const fetchCiclistas = async ()=>{
+            const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getCiclistas"])();
+            setCiclistas(data);
+            setFilteredCiclistas(data); // Inicializamos los ciclistas filtrados con todos
+        };
+        fetchCiclistas();
     }, []);
     const handleInputChange = (e)=>{
         const { name, value } = e.target;
@@ -44,6 +56,20 @@ function ContratoPage() {
             ...formData,
             [name]: value
         });
+        // Filtrar ciclistas por nombre
+        if (name === "ciclista") {
+            setSearchQuery(value);
+            const filtered = ciclistas.filter((ciclista)=>ciclista.nombre.toLowerCase().includes(value.toLowerCase()));
+            setFilteredCiclistas(filtered);
+        }
+    };
+    const handleSelectCiclista = (id, nombre)=>{
+        setFormData({
+            ...formData,
+            idPersona: id
+        });
+        setSearchQuery(nombre);
+        setFilteredCiclistas([]); // Limpiar la lista de búsqueda al seleccionar
     };
     const handleSubmit = (e)=>{
         e.preventDefault();
@@ -62,7 +88,7 @@ function ContratoPage() {
                 children: "Volver al Inicio"
             }, void 0, false, {
                 fileName: "[project]/src/app/Contrato/page.js",
-                lineNumber: 37,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -80,18 +106,18 @@ function ContratoPage() {
                                     children: numeroContrato
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Contrato/page.js",
-                                    lineNumber: 48,
+                                    lineNumber: 71,
                                     columnNumber: 33
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Contrato/page.js",
-                            lineNumber: 47,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Contrato/page.js",
-                        lineNumber: 46,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -99,7 +125,7 @@ function ContratoPage() {
                         children: "Alta de Contrato"
                     }, void 0, false, {
                         fileName: "[project]/src/app/Contrato/page.js",
-                        lineNumber: 53,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -113,23 +139,23 @@ function ContratoPage() {
                                         children: "Ciclista"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Contrato/page.js",
-                                        lineNumber: 60,
+                                        lineNumber: 81,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center border rounded-lg shadow-sm bg-white",
+                                        className: "relative flex items-center border rounded-lg shadow-sm bg-white",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 type: "text",
                                                 id: "ciclista",
                                                 name: "ciclista",
                                                 placeholder: "Buscar ciclista",
-                                                value: formData.ciclista,
+                                                value: searchQuery,
                                                 onChange: handleInputChange,
                                                 className: "flex-1 px-4 py-3 outline-none text-black"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Contrato/page.js",
-                                                lineNumber: 67,
+                                                lineNumber: 85,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -138,19 +164,35 @@ function ContratoPage() {
                                                 children: "🔍"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Contrato/page.js",
-                                                lineNumber: 76,
+                                                lineNumber: 94,
                                                 columnNumber: 15
+                                            }, this),
+                                            filteredCiclistas.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                className: "absolute top-full left-0 w-full bg-white shadow-lg max-h-60 overflow-y-auto z-10",
+                                                children: filteredCiclistas.map((ciclista)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "px-4 py-2 cursor-pointer hover:bg-gray-200",
+                                                        onClick: ()=>handleSelectCiclista(ciclista.id, ciclista.nombre),
+                                                        children: ciclista.nombre
+                                                    }, ciclista.id, false, {
+                                                        fileName: "[project]/src/app/Contrato/page.js",
+                                                        lineNumber: 103,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Contrato/page.js",
+                                                lineNumber: 101,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Contrato/page.js",
-                                        lineNumber: 66,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Contrato/page.js",
-                                lineNumber: 59,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -161,7 +203,7 @@ function ContratoPage() {
                                         children: "Equipo"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Contrato/page.js",
-                                        lineNumber: 86,
+                                        lineNumber: 117,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -172,12 +214,12 @@ function ContratoPage() {
                                                 id: "equipo",
                                                 name: "equipo",
                                                 placeholder: "Buscar equipo",
-                                                value: formData.equipo,
+                                                value: formData.idEquipo,
                                                 onChange: handleInputChange,
                                                 className: "flex-1 px-4 py-3 outline-none text-black"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Contrato/page.js",
-                                                lineNumber: 93,
+                                                lineNumber: 121,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -186,25 +228,25 @@ function ContratoPage() {
                                                 children: "🔍"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Contrato/page.js",
-                                                lineNumber: 102,
+                                                lineNumber: 130,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Contrato/page.js",
-                                        lineNumber: 92,
+                                        lineNumber: 120,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Contrato/page.js",
-                                lineNumber: 85,
+                                lineNumber: 116,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Contrato/page.js",
-                        lineNumber: 58,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -218,7 +260,7 @@ function ContratoPage() {
                                         children: "Fecha Inicio"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Contrato/page.js",
-                                        lineNumber: 115,
+                                        lineNumber: 142,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -233,7 +275,7 @@ function ContratoPage() {
                                                 className: "flex-1 px-4 py-3 outline-none text-black"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Contrato/page.js",
-                                                lineNumber: 122,
+                                                lineNumber: 146,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -241,19 +283,19 @@ function ContratoPage() {
                                                 children: "📅"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Contrato/page.js",
-                                                lineNumber: 130,
+                                                lineNumber: 154,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Contrato/page.js",
-                                        lineNumber: 121,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Contrato/page.js",
-                                lineNumber: 114,
+                                lineNumber: 141,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -264,7 +306,7 @@ function ContratoPage() {
                                         children: "Fecha Fin"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Contrato/page.js",
-                                        lineNumber: 135,
+                                        lineNumber: 159,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -279,7 +321,7 @@ function ContratoPage() {
                                                 className: "flex-1 px-4 py-3 outline-none text-black"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Contrato/page.js",
-                                                lineNumber: 142,
+                                                lineNumber: 163,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -287,25 +329,25 @@ function ContratoPage() {
                                                 children: "📅"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Contrato/page.js",
-                                                lineNumber: 150,
+                                                lineNumber: 171,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Contrato/page.js",
-                                        lineNumber: 141,
+                                        lineNumber: 162,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Contrato/page.js",
-                                lineNumber: 134,
+                                lineNumber: 158,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Contrato/page.js",
-                        lineNumber: 113,
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -319,13 +361,13 @@ function ContratoPage() {
                                     children: "Cancelar"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Contrato/page.js",
-                                    lineNumber: 158,
-                                    columnNumber: 11
+                                    lineNumber: 178,
+                                    columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Contrato/page.js",
-                                lineNumber: 157,
-                                columnNumber: 9
+                                lineNumber: 177,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "submit",
@@ -333,25 +375,25 @@ function ContratoPage() {
                                 children: "Aceptar"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Contrato/page.js",
-                                lineNumber: 165,
+                                lineNumber: 185,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Contrato/page.js",
-                        lineNumber: 156,
+                        lineNumber: 176,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Contrato/page.js",
-                lineNumber: 41,
+                lineNumber: 68,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Contrato/page.js",
-        lineNumber: 35,
+        lineNumber: 63,
         columnNumber: 5
     }, this);
 }
