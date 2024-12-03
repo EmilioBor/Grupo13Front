@@ -1,6 +1,6 @@
 {
   "node": {
-    "405c6dbd757e0639513ac08ea3ca528dec4c7ec25b": {
+    "4059a3e5562929719dd130a5adec34c8ce1cf488d1": {
       "workers": {
         "app/VistaEquipo/page": {
           "moduleId": "[project]/.next-internal/server/app/VistaEquipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
@@ -11,7 +11,7 @@
         "app/VistaEquipo/page": "action-browser"
       }
     },
-    "4059a3e5562929719dd130a5adec34c8ce1cf488d1": {
+    "405c6dbd757e0639513ac08ea3ca528dec4c7ec25b": {
       "workers": {
         "app/VistaEquipo/page": {
           "moduleId": "[project]/.next-internal/server/app/VistaEquipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
@@ -33,7 +33,7 @@
         "app/VistaEquipo/page": "action-browser"
       }
     },
-    "40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2": {
+    "40ffbac1f3bb5002038674dea5a6f61d37c99d4fc4": {
       "workers": {
         "app/VistaEquipo/page": {
           "moduleId": "[project]/.next-internal/server/app/VistaEquipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
@@ -44,7 +44,7 @@
         "app/VistaEquipo/page": "action-browser"
       }
     },
-    "40ffbac1f3bb5002038674dea5a6f61d37c99d4fc4": {
+    "40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2": {
       "workers": {
         "app/VistaEquipo/page": {
           "moduleId": "[project]/.next-internal/server/app/VistaEquipo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",

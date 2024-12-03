@@ -157,7 +157,7 @@ export default function VistaEquipos() {
           {/* Botón Agregar Ciclista */}
           <div className="flex justify-end p-8">
             <Link
-              href={"/Persona"}
+              href={"AltaPrueba/CargarPosicion"}
               className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-green-600 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20"
               >
               Agregar Equipo
