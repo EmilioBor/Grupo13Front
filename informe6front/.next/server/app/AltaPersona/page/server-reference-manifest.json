@@ -1,0 +1,49 @@
+{
+  "node": {
+    "005c2f72c968ccabd1daa141864f6f222dba5eeb6f": {
+      "workers": {
+        "app/AltaPersona/page": {
+          "moduleId": "[project]/.next-internal/server/app/AltaPersona/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/pais.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/AltaPersona/page": "action-browser"
+      }
+    },
+    "00ed57cec36f2de12436ef050ad1cf342d43993d1c": {
+      "workers": {
+        "app/AltaPersona/page": {
+          "moduleId": "[project]/.next-internal/server/app/AltaPersona/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/pais.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/AltaPersona/page": "action-browser"
+      }
+    },
+    "403d60dd850e963f5fc96cbb1f171df2b26eab7650": {
+      "workers": {
+        "app/AltaPersona/page": {
+          "moduleId": "[project]/.next-internal/server/app/AltaPersona/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/pais.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/AltaPersona/page": "action-browser"
+      }
+    },
+    "0022d198029cede83f1aa09951c11efa55baea3a82": {
+      "workers": {
+        "app/AltaPersona/page": {
+          "moduleId": "[project]/.next-internal/server/app/AltaPersona/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/pais.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/AltaPersona/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

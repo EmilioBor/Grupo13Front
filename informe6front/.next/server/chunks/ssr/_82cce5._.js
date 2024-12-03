@@ -44,10 +44,14 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 {
 __turbopack_export_namespace__(__turbopack_import__("[project]/src/app/AltaPrueba/CargarPosicion/page.js [app-rsc] (ecmascript)"));
 }}),
-"[project]/.next-internal/server/app/AltaPrueba/CargarPosicion/page/actions.js [app-rsc] (ecmascript)": (function(__turbopack_context__) {
+"[project]/.next-internal/server/app/AltaPrueba/CargarPosicion/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
 
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, m: module, e: exports, t: require } = __turbopack_context__;
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
 {
+export { getsEquipo as '00996c7151bde45678d7b44cfcfe229a4adb98e016' } from 'ACTIONS_MODULE0';
+export { getbynombre as '4059a3e5562929719dd130a5adec34c8ce1cf488d1' } from 'ACTIONS_MODULE0';
+export { postEquipo as '40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2' } from 'ACTIONS_MODULE0';
 }}),
 "[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/AltaPrueba/CargarPosicion/page { METADATA_0 => \"[project]/src/app/favicon.ico.mjs { IMAGE => \\\"[project]/src/app/favicon.ico [app-rsc] (static)\\\" } [app-rsc] (structured image object, ecmascript, Next.js server component)\", MODULE_1 => \"[project]/src/app/layout.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_2 => \"[project]/node_modules/next/dist/client/components/not-found-error.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_3 => \"[project]/src/app/AltaPrueba/CargarPosicion/page.js [app-rsc] (ecmascript, Next.js server component)\" } [app-rsc] (ecmascript) <locals>": ((__turbopack_context__) => {
 "use strict";
@@ -271,4 +275,4 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 
 };
 
-//# sourceMappingURL=_82cce5._.js.map
+//# sourceMappingURL=_2e5bd1._.js.map

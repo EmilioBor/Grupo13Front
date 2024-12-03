@@ -1,6 +1,6 @@
 {
   "node": {
-    "40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2": {
+    "00ed57cec36f2de12436ef050ad1cf342d43993d1c": {
       "workers": {
         "app/Contrato/page": {
           "moduleId": "[project]/.next-internal/server/app/Contrato/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
@@ -33,7 +33,18 @@
         "app/Contrato/page": "action-browser"
       }
     },
-    "00ed57cec36f2de12436ef050ad1cf342d43993d1c": {
+    "403d60dd850e963f5fc96cbb1f171df2b26eab7650": {
+      "workers": {
+        "app/Contrato/page": {
+          "moduleId": "[project]/.next-internal/server/app/Contrato/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/Contrato/page": "action-browser"
+      }
+    },
+    "4059a3e5562929719dd130a5adec34c8ce1cf488d1": {
       "workers": {
         "app/Contrato/page": {
           "moduleId": "[project]/.next-internal/server/app/Contrato/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
@@ -55,7 +66,7 @@
         "app/Contrato/page": "action-browser"
       }
     },
-    "40ffbac1f3bb5002038674dea5a6f61d37c99d4fc4": {
+    "40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2": {
       "workers": {
         "app/Contrato/page": {
           "moduleId": "[project]/.next-internal/server/app/Contrato/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
@@ -66,7 +77,7 @@
         "app/Contrato/page": "action-browser"
       }
     },
-    "4059a3e5562929719dd130a5adec34c8ce1cf488d1": {
+    "40ffbac1f3bb5002038674dea5a6f61d37c99d4fc4": {
       "workers": {
         "app/Contrato/page": {
           "moduleId": "[project]/.next-internal/server/app/Contrato/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
