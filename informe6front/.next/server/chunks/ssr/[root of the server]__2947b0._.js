@@ -129,9 +129,10 @@ module.exports = mod;
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
 {
-/* __next_internal_action_entry_do_not_use__ {"0080fa7cd71f765c7cab0f5ed42e66f1cecbdb5aa0":"getListaDirectores","0083fcafc6e5448a302def9f79799523a969f982d0":"getListaCiclista"} */ __turbopack_esm__({
+/* __next_internal_action_entry_do_not_use__ {"0080fa7cd71f765c7cab0f5ed42e66f1cecbdb5aa0":"getListaDirectores","0083fcafc6e5448a302def9f79799523a969f982d0":"getListaCiclista","407a138c7b35563242a7931df17639680d5c9ec6f0":"postsPersona"} */ __turbopack_esm__({
     "getListaCiclista": (()=>getListaCiclista),
-    "getListaDirectores": (()=>getListaDirectores)
+    "getListaDirectores": (()=>getListaDirectores),
+    "postsPersona": (()=>postsPersona)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/server-reference.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$app$2d$render$2f$encryption$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/app-render/encryption.js [app-rsc] (ecmascript)");
@@ -168,20 +169,42 @@ async function getListaCiclista() {
         throw error;
     }
 }
+async function postsPersona(data) {
+    try {
+        const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].post('https://localhost:7087/api/v1/createpersona', data, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        console.log(response);
+        return response.data;
+    } catch (error) {
+        console.error('Error al enviar datos a la API:', error.response || error.message);
+        console.error('Detalles del error:', {
+            message: error.message,
+            status: error.response?.status,
+            data: error.response?.data
+        });
+        throw error; // Propaga el error para manejarlo en el componente
+    }
+}
 ;
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     getListaDirectores,
-    getListaCiclista
+    getListaCiclista,
+    postsPersona
 ]);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getListaDirectores, "0080fa7cd71f765c7cab0f5ed42e66f1cecbdb5aa0", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getListaCiclista, "0083fcafc6e5448a302def9f79799523a969f982d0", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(postsPersona, "407a138c7b35563242a7931df17639680d5c9ec6f0", null);
 }}),
 "[project]/src/actions/persona.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
 {
-/* __next_internal_action_entry_do_not_use__ {"0022d198029cede83f1aa09951c11efa55baea3a82":"getDirector","00ed57cec36f2de12436ef050ad1cf342d43993d1c":"getCiclistas"} */ __turbopack_esm__({
+/* __next_internal_action_entry_do_not_use__ {"0022d198029cede83f1aa09951c11efa55baea3a82":"getDirector","00ed57cec36f2de12436ef050ad1cf342d43993d1c":"getCiclistas","403d60dd850e963f5fc96cbb1f171df2b26eab7650":"agregarPersona"} */ __turbopack_esm__({
+    "agregarPersona": (()=>agregarPersona),
     "getCiclistas": (()=>getCiclistas),
     "getDirector": (()=>getDirector)
 });
@@ -198,13 +221,18 @@ async function getDirector() {
 async function getCiclistas() {
     return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$api$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getListaCiclista"])();
 }
+async function agregarPersona(data) {
+    return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$api$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["postsPersona"])(data);
+}
 ;
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     getDirector,
-    getCiclistas
+    getCiclistas,
+    agregarPersona
 ]);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getDirector, "0022d198029cede83f1aa09951c11efa55baea3a82", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getCiclistas, "00ed57cec36f2de12436ef050ad1cf342d43993d1c", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(agregarPersona, "403d60dd850e963f5fc96cbb1f171df2b26eab7650", null);
 }}),
 "[project]/src/lib/api/equipo.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -401,6 +429,7 @@ __turbopack_esm__({});
 ;
 ;
 ;
+;
 }}),
 "[project]/.next-internal/server/app/AltaPrueba/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/persona.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/equipo.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/contraro.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
@@ -422,6 +451,7 @@ __turbopack_esm__({
     "0022d198029cede83f1aa09951c11efa55baea3a82": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getDirector"]),
     "00996c7151bde45678d7b44cfcfe229a4adb98e016": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getsEquipo"]),
     "00ed57cec36f2de12436ef050ad1cf342d43993d1c": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getCiclistas"]),
+    "403d60dd850e963f5fc96cbb1f171df2b26eab7650": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["agregarPersona"]),
     "4059a3e5562929719dd130a5adec34c8ce1cf488d1": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getbynombre"]),
     "405c6dbd757e0639513ac08ea3ca528dec4c7ec25b": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["postContrato"]),
     "40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["postEquipo"]),
@@ -441,6 +471,7 @@ __turbopack_esm__({
     "0022d198029cede83f1aa09951c11efa55baea3a82": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$AltaPrueba$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE2__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["0022d198029cede83f1aa09951c11efa55baea3a82"]),
     "00996c7151bde45678d7b44cfcfe229a4adb98e016": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$AltaPrueba$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE2__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["00996c7151bde45678d7b44cfcfe229a4adb98e016"]),
     "00ed57cec36f2de12436ef050ad1cf342d43993d1c": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$AltaPrueba$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE2__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["00ed57cec36f2de12436ef050ad1cf342d43993d1c"]),
+    "403d60dd850e963f5fc96cbb1f171df2b26eab7650": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$AltaPrueba$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE2__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["403d60dd850e963f5fc96cbb1f171df2b26eab7650"]),
     "4059a3e5562929719dd130a5adec34c8ce1cf488d1": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$AltaPrueba$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE2__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["4059a3e5562929719dd130a5adec34c8ce1cf488d1"]),
     "405c6dbd757e0639513ac08ea3ca528dec4c7ec25b": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$AltaPrueba$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE2__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["405c6dbd757e0639513ac08ea3ca528dec4c7ec25b"]),
     "40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$AltaPrueba$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE2__$3d3e$__$225b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["40bfda39d400a0ba8dc398ed0e1ef4c3ff96b99ab2"]),

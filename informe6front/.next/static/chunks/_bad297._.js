@@ -28,9 +28,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/equipo.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/router.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -73,6 +75,19 @@ function CargarEquipo() {
                 ]);
         }
     };
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const { id } = router.query;
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "CargarEquipo.useEffect": ()=>{
+            if (id) {
+                // Hacer algo con el id, por ejemplo, cargar el equipo o realizar una API call
+                console.log("ID del postPrueba:", id);
+            }
+        }
+    }["CargarEquipo.useEffect"], [
+        id
+    ]);
+    console.log(id);
     const handleEliminarEquipo = (numero)=>{
         setTablaEquipos((prev)=>prev.filter((equipo)=>equipo.numero !== numero) // Eliminamos el equipo
             .map((equipo, index)=>({
@@ -101,7 +116,7 @@ function CargarEquipo() {
                 children: "Volver al Inicio"
             }, void 0, false, {
                 fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                lineNumber: 61,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -112,7 +127,7 @@ function CargarEquipo() {
                         children: "Cargar Equipo"
                     }, void 0, false, {
                         fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                        lineNumber: 69,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -125,7 +140,7 @@ function CargarEquipo() {
                                     children: "Seleccionar Equipo"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                    lineNumber: 74,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -140,7 +155,7 @@ function CargarEquipo() {
                                             children: "Selecciona un equipo"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 15
                                         }, this),
                                         equipos.map((equipo)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -148,24 +163,24 @@ function CargarEquipo() {
                                                 children: equipo.nombre
                                             }, equipo.id, false, {
                                                 fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                                lineNumber: 89,
+                                                lineNumber: 99,
                                                 columnNumber: 17
                                             }, this))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                    lineNumber: 80,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                            lineNumber: 73,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                        lineNumber: 71,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -177,12 +192,12 @@ function CargarEquipo() {
                             children: "Agregar Equipo"
                         }, void 0, false, {
                             fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                            lineNumber: 99,
+                            lineNumber: 109,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                        lineNumber: 98,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -199,7 +214,7 @@ function CargarEquipo() {
                                                 children: "Número"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                                lineNumber: 113,
+                                                lineNumber: 123,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -207,7 +222,7 @@ function CargarEquipo() {
                                                 children: "Equipo"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                                lineNumber: 116,
+                                                lineNumber: 126,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -215,18 +230,18 @@ function CargarEquipo() {
                                                 children: "Eliminar"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                                lineNumber: 119,
+                                                lineNumber: 129,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                        lineNumber: 112,
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                    lineNumber: 111,
+                                    lineNumber: 121,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -238,7 +253,7 @@ function CargarEquipo() {
                                                     children: equipo.numero
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                                    lineNumber: 128,
+                                                    lineNumber: 138,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -246,7 +261,7 @@ function CargarEquipo() {
                                                     children: equipo.nombre
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                                    lineNumber: 129,
+                                                    lineNumber: 139,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -257,18 +272,18 @@ function CargarEquipo() {
                                                         children: "Eliminar"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                                        lineNumber: 131,
+                                                        lineNumber: 141,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                                    lineNumber: 130,
+                                                    lineNumber: 140,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, equipo.numero, true, {
                                             fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                            lineNumber: 127,
+                                            lineNumber: 137,
                                             columnNumber: 19
                                         }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -277,28 +292,28 @@ function CargarEquipo() {
                                             children: "No hay equipos cargados"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                            lineNumber: 142,
+                                            lineNumber: 152,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                        lineNumber: 141,
+                                        lineNumber: 151,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                    lineNumber: 124,
+                                    lineNumber: 134,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                            lineNumber: 110,
+                            lineNumber: 120,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                        lineNumber: 109,
+                        lineNumber: 119,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -312,12 +327,12 @@ function CargarEquipo() {
                                     children: "Cancelar"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                    lineNumber: 156,
+                                    lineNumber: 166,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                lineNumber: 155,
+                                lineNumber: 165,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -328,29 +343,33 @@ function CargarEquipo() {
                                 children: loading ? "Enviando..." : "Aceptar"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                                lineNumber: 164,
+                                lineNumber: 174,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                        lineNumber: 154,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-                lineNumber: 68,
+                lineNumber: 78,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/AltaPrueba/CargarPosicion/page.js",
-        lineNumber: 60,
+        lineNumber: 70,
         columnNumber: 5
     }, this);
 }
-_s(CargarEquipo, "cR7FmU//bQYAJWzVTdKjT3JxBAE=");
+_s(CargarEquipo, "5dfzHLq5Oa1As3qOH1rAJG+In28=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = CargarEquipo;
 var _c;
 __turbopack_refresh__.register(_c, "CargarEquipo");

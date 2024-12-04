@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/emili/OneDrive/Escritorio/Dise%C3%B1o%20de%20Sistemas/2024/FrontGrupo13/Grupo13Front/informe6front/src/actions/equipo.js"],"sourcesContent":["'use server';\r\nimport { agregandoEquipo, buscarequipo, listaEquipo } from \"@/lib/api/equipo\";\r\nexport async function postEquipo(data) {\r\n    return await agregandoEquipo(data);\r\n}\r\n\r\nexport async function getbynombre(nombre) {\r\n    return await buscarequipo(nombre);\r\n}\r\n\r\nexport async function getsEquipo() {\r\n    return await listaEquipo();\r\n}"],"names":[],"mappings":";;;;;;;IAEsB;IAIA;IAIA"}},
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

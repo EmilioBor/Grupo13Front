@@ -2,18 +2,24 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { getsEquipo } from "@/actions/equipo";
-
-export default function CargarEquipo() {
+import { useRouter } from "next/router";
+import { useSearchParams } from "next/navigation";
+import { agregandoPruebaEquipo } from "@/actions/pruebaequipo";
+export default function CargarEquipo({params}) {
   const [formData, setFormData] = useState({
     nombre: "",
     idPais: "",
     idPersona: "",
   });
-  const [equipos, setEquipos] = useState([]); // Lista cargada de equipos
-  const [tablaEquipos, setTablaEquipos] = useState([]); // Equipos agregados a la tabla
+  const [equipos, setEquipos] = useState([]); 
+  const [tablaEquipos, setTablaEquipos] = useState([]); 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-
+  const [pruebaEquipo, setPruebaEquipo] = useState({
+    posicion : 0,
+    idPrueba: 0,
+    idEquipo: 0
+  })
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -37,18 +43,57 @@ export default function CargarEquipo() {
     }
   };
 
+  const searchParams = useSearchParams();
+  const pruebaId = searchParams.get("id");
+
+  
+
   const handleEliminarEquipo = (numero) => {
     setTablaEquipos((prev) =>
       prev
-        .filter((equipo) => equipo.numero !== numero) // Eliminamos el equipo
-        .map((equipo, index) => ({ ...equipo, numero: index + 1 })) // Recalculamos los números
+        .filter((equipo) => equipo.numero !== numero) 
+        .map((equipo, index) => ({ ...equipo, numero: index + 1 })) 
     );
   };
 
-  const handleAceptar = () => {
-    localStorage.setItem("tablaEquipos", JSON.stringify(tablaEquipos));
-    alert("Equipos enviados correctamente");
+  const handleAceptar = async () => {
+    try {
+      setLoading(true);
+      
+      // Validación opcional: Define un rango máximo para las posiciones
+      const MAX_POSICIONES = 100; // Cambia esto según el límite que necesites
+      
+      if (tablaEquipos.length > MAX_POSICIONES) {
+        throw new Error(`No se pueden asignar más de ${MAX_POSICIONES} equipos.`);
+      }
+  
+      const requests = tablaEquipos.map((equipo, index) => {
+        const posicion = index + 1; 
+        if (posicion < 1 || posicion > MAX_POSICIONES) {
+          throw new Error(`La posición ${posicion} está fuera de rango.`);
+        }
+  
+        const payload = {
+          posicion, 
+          idPrueba: parseInt(pruebaId, 10), 
+          idEquipo: equipo.id, 
+        };
+  
+        console.log("Enviando datos para equipo:", payload);
+        return agregandoPruebaEquipo(payload); 
+      });
+  
+      await Promise.all(requests); 
+      alert("Equipos registrados con éxito.");
+      router.push("/"); 
+    } catch (err) {
+      console.error("Error al registrar equipos:", err);
+      alert(`Ocurrió un error al registrar equipos: ${err.message}`);
+    } finally {
+      setLoading(false);
+    }
   };
+  
   
 
   const handleInputChange = (e) => {
@@ -56,6 +101,53 @@ export default function CargarEquipo() {
     setFormData({ ...formData, [name]: value });
   };
 
+
+
+  
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setPruebaEquipo({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  const handleApiSubmit = async () => {
+    try {
+      setLoading(true);
+
+      const payload = {
+        posicion: parseInt(pruebaEquipo.posicion, 10),
+        idPrueba: parseInt(pruebaId, 10),
+        idEquipo: parseInt(pruebaEquipo.idEquipo, 10),
+        
+      };
+
+      console.log("Enviando datos:", payload);
+
+      const response = await agregandoPruebaEquipo(payload);
+
+      console.log("Datos enviados con éxito:", response);
+      alert("Equipo registrado con éxito.");
+
+      
+      
+      
+    } catch (err) {
+      console.error("Error al enviar los datos:", err);
+      alert(`Ocurrió un error: ${err.message}`);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const confirm = window.confirm("¿Estás seguro de que deseas registrar esta persona?");
+    if (confirm) {
+      handleApiSubmit();
+    }
+  };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-12">
       <Link
@@ -69,7 +161,7 @@ export default function CargarEquipo() {
         <h1 className="text-4xl font-bold text-center text-black">Cargar Equipo</h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-          {/* Desplegable para seleccionar un equipo */}
+         
           <div>
             <label
               htmlFor="nombre"
@@ -94,7 +186,7 @@ export default function CargarEquipo() {
           </div>
         </div>
 
-        {/* Botón para agregar equipo */}
+        
         <div className="flex justify-end">
           <button
             type="button"
@@ -105,7 +197,7 @@ export default function CargarEquipo() {
           </button>
         </div>
 
-        {/* Tabla de equipos */}
+       
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300 text-black">
             <thead>
@@ -167,7 +259,9 @@ export default function CargarEquipo() {
               className="px-8 py-4 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600"
               disabled={loading}
               >
+              
               {loading ? "Enviando..." : "Aceptar"}
+              
             </button>
           
 

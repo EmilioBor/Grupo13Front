@@ -3,8 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation"; 
-import { getsEquipo } from "@/actions/equipo";
-import { getContratoEquipo } from "@/actions/contraro";
 import { getCiclistas } from "@/actions/persona";
 import { postPrueba } from "@/actions/prueba";
 
@@ -51,8 +49,8 @@ export default function VistaEquipos() {
       nombrePersona: selectedEquipo.nombrePersona,
     });
     setNombre(selectedEquipo.nombre);
-    setEquiposList([]); // Aquí falta cerrar la función con `}`
-  }; // Agrega este cierre.
+    setEquiposList([]); 
+  }; 
   
   
   const router = useRouter(); 
@@ -60,7 +58,7 @@ export default function VistaEquipos() {
   const handleApiSubmit = async () => {
     try {
       setLoading(true);
-
+  
       const payload = {
         nombre: formData.nombre,
         añoEdicion: parseInt(formData.añoEdicion, 10),
@@ -68,12 +66,22 @@ export default function VistaEquipos() {
         kmTotales: parseInt(formData.kmTotales, 10),
         idPersona: parseInt(formData.idPersona, 10),
       };
-
+  
       const response = await postPrueba(payload);
-      alert("Prueba cargada con éxito");
-
       
-        router.push("/Contrato");
+      
+      console.log(response);
+  
+      
+  
+      if (postId) {
+        alert("Prueba cargada con éxito");
+  
+       
+        router.push(`/AltaPrueba/CargarPosicion?id=${postId}`);
+      } else {
+        alert("No se encontró el id en la respuesta.");
+      }
       
     } catch (error) {
       console.error("Error al enviar los datos:", error.response || error.message);
@@ -82,6 +90,7 @@ export default function VistaEquipos() {
       setLoading(false);
     }
   };
+  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-12">

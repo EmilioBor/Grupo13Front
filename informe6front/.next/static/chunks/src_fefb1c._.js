@@ -35,7 +35,8 @@ var postContrato = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: require } = __turbopack_context__;
 {
-/* __next_internal_action_entry_do_not_use__ {"0022d198029cede83f1aa09951c11efa55baea3a82":"getDirector","00ed57cec36f2de12436ef050ad1cf342d43993d1c":"getCiclistas"} */ __turbopack_esm__({
+/* __next_internal_action_entry_do_not_use__ {"0022d198029cede83f1aa09951c11efa55baea3a82":"getDirector","00ed57cec36f2de12436ef050ad1cf342d43993d1c":"getCiclistas","403d60dd850e963f5fc96cbb1f171df2b26eab7650":"agregarPersona"} */ __turbopack_esm__({
+    "agregarPersona": (()=>agregarPersona),
     "getCiclistas": (()=>getCiclistas),
     "getDirector": (()=>getDirector)
 });
@@ -43,6 +44,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 var getDirector = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createServerReference"])("0022d198029cede83f1aa09951c11efa55baea3a82", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getDirector");
 var getCiclistas = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createServerReference"])("00ed57cec36f2de12436ef050ad1cf342d43993d1c", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getCiclistas");
+var agregarPersona = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createServerReference"])("403d60dd850e963f5fc96cbb1f171df2b26eab7650", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["findSourceMapURL"], "agregarPersona");
 }}),
 "[project]/src/lib/api/prueba.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -108,8 +110,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$equipo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/equipo.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$contraro$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/contraro.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$persona$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/persona.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$prueba$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/actions/prueba.js [app-client] (ecmascript)");
 ;
@@ -120,11 +120,8 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-;
-;
 function VistaEquipos() {
     _s();
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     // Estados
     const [equipo, setEquipo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         nombre: "",
@@ -168,8 +165,9 @@ function VistaEquipos() {
             nombrePersona: selectedEquipo.nombrePersona
         });
         setNombre(selectedEquipo.nombre);
-        setEquiposList([]); // Aquí falta cerrar la función con `}`
-    }; // Agrega este cierre.
+        setEquiposList([]);
+    };
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const handleApiSubmit = async ()=>{
         try {
             setLoading(true);
@@ -182,7 +180,7 @@ function VistaEquipos() {
             };
             const response = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$prueba$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["postPrueba"])(payload);
             alert("Prueba cargada con éxito");
-            router.push(`/AltaPrueba/CargarPosicion/`);
+            router.push("/AltaPrueba/CargarPosicion");
         } catch (error) {
             console.error("Error al enviar los datos:", error.response || error.message);
             alert(`Ocurrió un error: ${error.response?.data?.message || error.message}`);
@@ -199,7 +197,7 @@ function VistaEquipos() {
                 children: "Volver al Inicio"
             }, void 0, false, {
                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                lineNumber: 88,
+                lineNumber: 86,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -210,7 +208,7 @@ function VistaEquipos() {
                         children: "Alta Prueba"
                     }, void 0, false, {
                         fileName: "[project]/src/app/AltaPrueba/page.js",
-                        lineNumber: 92,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -225,7 +223,7 @@ function VistaEquipos() {
                                     })
                             }, void 0, false, {
                                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                                lineNumber: 96,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(InputField, {
@@ -237,7 +235,7 @@ function VistaEquipos() {
                                     })
                             }, void 0, false, {
                                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                                lineNumber: 101,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(InputField, {
@@ -249,7 +247,7 @@ function VistaEquipos() {
                                     })
                             }, void 0, false, {
                                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                                lineNumber: 106,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(InputField, {
@@ -261,7 +259,7 @@ function VistaEquipos() {
                                     })
                             }, void 0, false, {
                                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                                lineNumber: 111,
+                                lineNumber: 109,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SelectField, {
@@ -274,13 +272,13 @@ function VistaEquipos() {
                                     })
                             }, void 0, false, {
                                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                                lineNumber: 116,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/AltaPrueba/page.js",
-                        lineNumber: 95,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -291,28 +289,28 @@ function VistaEquipos() {
                             children: "Agregar Equipo"
                         }, void 0, false, {
                             fileName: "[project]/src/app/AltaPrueba/page.js",
-                            lineNumber: 126,
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/AltaPrueba/page.js",
-                        lineNumber: 124,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                lineNumber: 91,
+                lineNumber: 89,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/AltaPrueba/page.js",
-        lineNumber: 87,
+        lineNumber: 85,
         columnNumber: 5
     }, this);
 }
-_s(VistaEquipos, "d5mehXRK8/OwMq9o6QMnRUfWVIA=", false, function() {
+_s(VistaEquipos, "94W/O8DARx67zoirD4e2lI07/m0=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
@@ -327,7 +325,7 @@ const InputField = ({ label, value, onChange })=>/*#__PURE__*/ (0, __TURBOPACK__
                 children: label
             }, void 0, false, {
                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                lineNumber: 145,
+                lineNumber: 143,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -337,13 +335,13 @@ const InputField = ({ label, value, onChange })=>/*#__PURE__*/ (0, __TURBOPACK__
                 onChange: onChange
             }, void 0, false, {
                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                lineNumber: 146,
+                lineNumber: 144,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/AltaPrueba/page.js",
-        lineNumber: 144,
+        lineNumber: 142,
         columnNumber: 3
     }, this);
 _c1 = InputField;
@@ -356,7 +354,7 @@ const SelectField = ({ label, options, value, onChange })=>/*#__PURE__*/ (0, __T
                 children: label
             }, void 0, false, {
                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                lineNumber: 158,
+                lineNumber: 156,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -369,7 +367,7 @@ const SelectField = ({ label, options, value, onChange })=>/*#__PURE__*/ (0, __T
                         children: "Seleccionar Ciclista"
                     }, void 0, false, {
                         fileName: "[project]/src/app/AltaPrueba/page.js",
-                        lineNumber: 164,
+                        lineNumber: 162,
                         columnNumber: 7
                     }, this),
                     options.map((opt)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -381,19 +379,19 @@ const SelectField = ({ label, options, value, onChange })=>/*#__PURE__*/ (0, __T
                             ]
                         }, opt.id, true, {
                             fileName: "[project]/src/app/AltaPrueba/page.js",
-                            lineNumber: 166,
+                            lineNumber: 164,
                             columnNumber: 9
                         }, this))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                lineNumber: 159,
+                lineNumber: 157,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/AltaPrueba/page.js",
-        lineNumber: 157,
+        lineNumber: 155,
         columnNumber: 3
     }, this);
 _c2 = SelectField;
@@ -412,7 +410,7 @@ const DataTable = ({ data })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$
                                 children: "Número"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                                lineNumber: 180,
+                                lineNumber: 178,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -420,18 +418,18 @@ const DataTable = ({ data })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$
                                 children: "Equipo"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/AltaPrueba/page.js",
-                                lineNumber: 181,
+                                lineNumber: 179,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/AltaPrueba/page.js",
-                        lineNumber: 179,
+                        lineNumber: 177,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/AltaPrueba/page.js",
-                    lineNumber: 178,
+                    lineNumber: 176,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -443,7 +441,7 @@ const DataTable = ({ data })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$
                                     children: item.id
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/AltaPrueba/page.js",
-                                    lineNumber: 188,
+                                    lineNumber: 186,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -451,13 +449,13 @@ const DataTable = ({ data })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$
                                     children: item.nombre
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/AltaPrueba/page.js",
-                                    lineNumber: 189,
+                                    lineNumber: 187,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, index, true, {
                             fileName: "[project]/src/app/AltaPrueba/page.js",
-                            lineNumber: 187,
+                            lineNumber: 185,
                             columnNumber: 13
                         }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -466,28 +464,28 @@ const DataTable = ({ data })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$
                             children: "No hay equipos cargados"
                         }, void 0, false, {
                             fileName: "[project]/src/app/AltaPrueba/page.js",
-                            lineNumber: 194,
+                            lineNumber: 192,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/AltaPrueba/page.js",
-                        lineNumber: 193,
+                        lineNumber: 191,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/AltaPrueba/page.js",
-                    lineNumber: 184,
+                    lineNumber: 182,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/AltaPrueba/page.js",
-            lineNumber: 177,
+            lineNumber: 175,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/AltaPrueba/page.js",
-        lineNumber: 176,
+        lineNumber: 174,
         columnNumber: 3
     }, this);
 _c3 = DataTable;
